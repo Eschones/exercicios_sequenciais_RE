@@ -81,8 +81,8 @@ public class ExerciciosSequenciais {
     static void valorDolar(){
     
         Scanner scanner = new Scanner(System.in);
-        
-        double qntDolar;
+        // Definicao de variaveis
+        double qntDolar = 0.0d;
         double cotacaoDolar;
         double valorReais;
         
