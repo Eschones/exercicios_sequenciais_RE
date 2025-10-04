@@ -12,7 +12,8 @@ public class ExerciciosSequenciais {
 
 //        CalcularMediaPonderada();
 //        CalcularDesconto();
-        valorDolar();
+//        valorDolar();
+        tempCelsius();
 
     }
     static void CalcularMediaPonderada(){
@@ -95,6 +96,22 @@ public class ExerciciosSequenciais {
         
         System.out.println("O cofre possui R$" + valorReais);
     
+    }
+    
+    static void tempCelsius(){
+        double celsius;
+        double f;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("De a temperatura em celsius:");
+        celsius = scanner.nextDouble();
+        
+        f = ((9 * celsius + 160 ) / 5);
+        
+        System.out.println("A temperatura em Celsius eh: " + celsius);
+        System.out.println("A temperatura em Fahrenheit eh: " + f);
+        
     }
     
 }
