@@ -15,6 +15,7 @@ public class ExerciciosSequenciais {
 //        CalcularDesconto();
 //        calcularRaizes();
 //        valorDolar();
+//        kilometragem();
 //        tempCelsius();
 
     }
@@ -121,7 +122,7 @@ public class ExerciciosSequenciais {
        scanner.close();
     }
     
-    
+//    exercicio 5
     static void PoupancaProgramada(){
         
         Scanner scanner = new Scanner(System.in);
@@ -141,6 +142,7 @@ public class ExerciciosSequenciais {
         
     }
     
+//    exercicio 6
     static void valorDolar(){
     
         Scanner scanner = new Scanner(System.in);
@@ -158,6 +160,30 @@ public class ExerciciosSequenciais {
         
         System.out.println("O cofre possui R$" + valorReais);
     
+    }
+    
+//    exercicio 7
+    static void kilometragem(){
+        double km;
+        double kmh;
+        double tempoLevado;
+        double metrosSegundos;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Informe a distancia ate o local (em km): ");
+        km = scanner.nextDouble();
+        
+        System.out.println("Informe a quantos km/h pretende ir: ");
+        kmh = scanner.nextDouble();
+        
+        tempoLevado = km / kmh;
+        metrosSegundos = kmh / 3.6;
+        
+        System.out.println("Você levara " + tempoLevado + " para chegar ao local.");
+        System.out.println("A velocidade em metros/segundo sera de: " + metrosSegundos);
+        
+        
     }
     
     static void tempCelsius(){
