@@ -16,6 +16,7 @@ public class ExerciciosSequenciais {
 //        calcularRaizes();
 //        valorDolar();
 //        kilometragem();
+//        equacaoLinear();
 //        tempCelsius();
 
     }
@@ -183,9 +184,53 @@ public class ExerciciosSequenciais {
         System.out.println("Você levara " + tempoLevado + " para chegar ao local.");
         System.out.println("A velocidade em metros/segundo sera de: " + metrosSegundos);
         
-        
+        scanner.close();
     }
     
+//    exercicio 8
+    static void equacaoLinear(){
+        
+        double a;
+        double b;
+        double c;
+        double d;
+        double e;
+        double f;
+        double denominador;
+        double x;
+        double y;
+        
+        Scanner scanner = new Scanner(System.in);
+         
+        System.out.println("Informe o coeficiente 'a': ");
+        a = scanner.nextDouble();
+        
+        System.out.println("Informe o coeficiente 'b': ");
+        b = scanner.nextDouble();
+        
+        System.out.println("Informe o coeficiente 'c': ");
+        c = scanner.nextDouble();
+        
+        System.out.println("Informe o coeficiente 'd': ");
+        d = scanner.nextDouble();
+        
+        System.out.println("Informe o coeficiente 'e': ");
+        e = scanner.nextDouble();
+        
+        System.out.println("Informe o coeficiente 'f': ");
+        f = scanner.nextDouble();
+        
+        denominador = (a * e) - (b * d);
+        x = ((c * e) - (b * f)) / denominador;
+        y = ((a * f) - (c * d)) / denominador;
+        
+        System.out.println("O valor de 'x' eh: " + x);
+        System.out.println("O valor de 'y' eh: " + y);
+        
+        scanner.close();
+    }
+    
+//    exercicio 9
     static void tempCelsius(){
         double celsius;
         double f;
