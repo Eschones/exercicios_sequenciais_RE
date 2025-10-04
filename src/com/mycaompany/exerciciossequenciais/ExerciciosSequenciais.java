@@ -11,13 +11,16 @@ public class ExerciciosSequenciais {
     public static void main(String[] args) {
 
 //        CalcularMediaPonderada();
+//        catetoHipotenusa();
 //        CalcularDesconto();
+//        calcularRaizes();
 //        valorDolar();
-        tempCelsius();
+//        tempCelsius();
 
     }
+//    exercicio 1
     static void CalcularMediaPonderada(){
-        
+
         float n1, n2, n3, n4;
         
         Scanner scanner = new Scanner(System.in);
@@ -40,6 +43,32 @@ public class ExerciciosSequenciais {
         scanner.close();
             }
     
+//    exercicio 2
+    static void catetoHipotenusa(){
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        double catetoA;
+        double catetoB;
+        double calculoCatetos;
+        double hipotenusa;
+        
+        System.out.println("Informe o primeiro cateto do triangulo: ");
+        catetoA = scanner.nextInt();
+        
+        System.out.println("Informe o segundo cateto do triangulo: ");
+        catetoB = scanner.nextInt();
+        
+        calculoCatetos = Math.pow(catetoA, 2) + Math.pow(catetoB, 2) ;
+        hipotenusa = Math.sqrt(calculoCatetos);
+        
+        
+        System.out.println("A hipotenusa é: " + hipotenusa);
+        
+        scanner.close();
+    }
+    
+//    exercicio 3 
     static void CalcularDesconto(){
     
         Scanner scanner = new Scanner(System.in);
@@ -59,6 +88,39 @@ public class ExerciciosSequenciais {
         scanner.close();
                 
     }
+    
+//    exercicio 4
+    static void calcularRaizes(){
+        
+       Scanner scanner = new Scanner(System.in);
+        
+        double deltaB;
+        double deltaA;
+        double deltaC;
+        double delta;
+        double x1;
+        double x2;
+       
+        System.out.println("Para a equacao ax² + bx + c, ");        
+        System.out.println("Para calcular o delta, informe o valor de a: ");
+        deltaA = scanner.nextDouble();
+        
+        System.out.println("Para calcular o delta, informe o valor de b: ");
+        deltaB = scanner.nextDouble();
+        
+        System.out.println("Para calcular o delta, informe o valor de c: ");
+        deltaC = scanner.nextDouble();
+        
+        delta = Math.pow(deltaB, 2) - 4 * deltaA * deltaC;
+        x1 = ((-deltaB + Math.sqrt(delta)) / (2 * deltaA));
+        x2 = ((-deltaB - Math.sqrt(delta)) / (2 * deltaA));
+        
+        System.out.println("O valor do seu x1, com o delta positivo é: " + x1);
+        System.out.println("O valor do seu x1, com o delta negativo é: " + x2);
+       
+       scanner.close();
+    }
+    
     
     static void PoupancaProgramada(){
         
